@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bmi_calc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bmilogo"
+        android:label="BMI CALCULATOR"
+        android:roundIcon="@drawable/bmilogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BMI_Calc">
+        <activity android:name=".resume"></activity>
+        <activity android:name=".bmiactivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

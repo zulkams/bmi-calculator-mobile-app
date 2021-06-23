@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e1d1d"
+    tools:context=".resume">
+
+    <TextView
+        android:id="@+id/devinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DEV INFO"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:paddingTop="50dp"
+        android:textStyle="bold"></TextView>
+
+
+    <ImageView
+        android:layout_below="@id/devinfo"
+        android:id="@+id/profilepic"
+        android:layout_width="168dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="0dp"
+        android:src="@drawable/profile"
+        tools:layout_editor_absoluteX="121dp"
+        android:paddingBottom="10dp"
+        tools:layout_editor_absoluteY="45dp">
+
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_below="@id/profilepic"
+        android:id="@+id/contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbackground"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="NAME: MUHAMMAD ZULKAMAL BIN MOHD NOOR"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:paddingBottom="5dp"
+            android:textStyle=""></TextView>
+
+        <TextView
+            android:id="@+id/studid"
+            android:layout_below="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="STUDENT ID: 2020974683"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:paddingBottom="5dp"
+            android:textStyle=""></TextView>
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_below="@id/studid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="CLASS: M3CS2515A"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:paddingBottom="20dp"
+            android:textStyle=""></TextView>
+
+        <android.widget.Button
+            android:id="@+id/github"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/group"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonaboutbackground"
+            android:text="DEV GITHUB PAGE"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:onClick="browser"
+            android:textStyle="bold"></android.widget.Button>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
